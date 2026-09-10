@@ -1,4 +1,4 @@
- using UnityEngine;
+using UnityEngine;
 
 public class EffetParallaxe : MonoBehaviour
 {
@@ -18,44 +18,29 @@ public class EffetParallaxe : MonoBehaviour
 
     private void Start()
     {
-        // TODO 1 : mémoriser la position initiale de cette couche.
-
         positionInitiale = transform.position;
-        positionCameraInitiale = cameraCible.position;
 
-        // TODO 2 : trouver automatiquement la caméra si elle n'est pas assignée.
-        if (cameraCible == null)
-            {
+        if (cameraCible == null && Camera.main != null)
             cameraCible = Camera.main.transform;
-        }
-        transform.position = new Vector3();
-        // TODO 3 : mémoriser la position initiale de la caméra.
+
+        if (cameraCible != null)
+            positionCameraInitiale = cameraCible.position;
     }
 
     private void LateUpdate()
     {
+        if (cameraCible == null) return;
 
-        // TODO 4 : arrêter la méthode si aucune caméra n'est disponible.
-        if (cameraCible == null && Camera.main != null)
-        {
-            return;
+        Vector3 mouvementCamera = cameraCible.position - positionCameraInitiale;
+        decalageAutomatique += vitesseAutomatique * Time.deltaTime;
 
-        }
-        if (cameraCible != null)
-        {
-            Vector3 mouvementCamera = cameraCible.position - positionCameraInitiale;
-            decalageAutomatique += vitesseAutomatique * Time.deltaTime;
-
-        }
-
-
-
-
-
-        // TODO 5 : calculer le déplacement de la caméra.
-        // TODO 6 : mettre à jour le déplacement automatique.
-        // TODO 7 : calculer et appliquer la nouvelle position de la couche.
+        transform.position = new Vector3(
+            positionInitiale.x + mouvementCamera.x * suiviHorizontal + decalageAutomatique.x,
+            positionInitiale.y + mouvementCamera.y * suiviVertical + decalageAutomatique.y,
+            positionInitiale.z
+        );
     }
+}
 
     /*
      * BANQUE DE LIGNES — À REPLACER ET À INDENTER
@@ -72,7 +57,7 @@ public class EffetParallaxe : MonoBehaviour
      * return;
      * cameraCible = Camera.main.transform;
      * Vector3 mouvementCamera = cameraCible.position - positionCameraInitiale;
-     * transform.position = new Vector3()
+     * transform.position = new Vector3(
      * if (cameraCible == null && Camera.main != null)
      * positionCameraInitiale = cameraCible.position;
      * );
@@ -80,4 +65,4 @@ public class EffetParallaxe : MonoBehaviour
      * positionInitiale.x + mouvementCamera.x * suiviHorizontal
      *     + decalageAutomatique.x,
      */
-}
+

@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75804052}
   - component: {fileID: 75804051}
+  - component: {fileID: 75804053}
   m_Layer: 0
   m_Name: Fond_PremierPlan_0
   m_TagString: Untagged
@@ -182,7 +183,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -5
   m_Sprite: {fileID: -6550866271771254058, guid: 34c1382f14cfa4c4e9a7eca524fb84b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -209,6 +210,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &75804053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75804050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a583d581d8821ab49a3bbf4db5e23f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 519420032}
+  suiviHorizontal: 0.4
+  suiviVertical: 0.6
+  vitesseAutomatique: {x: 0, y: 0}
 --- !u!1 &100522287
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,6 +3427,7 @@ GameObject:
   - component: {fileID: 628905360}
   - component: {fileID: 628905359}
   - component: {fileID: 628905358}
+  - component: {fileID: 628905361}
   m_Layer: 0
   m_Name: Fond_Usine_0
   m_TagString: Untagged
@@ -3485,7 +3503,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -20
   m_Sprite: {fileID: 1982360286770121573, guid: f6dc5e73a66a6194f839cd195b89246b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3512,6 +3530,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628905361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628905357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a583d581d8821ab49a3bbf4db5e23f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 519420032}
+  suiviHorizontal: 0.75
+  suiviVertical: 0.85
+  vitesseAutomatique: {x: 0.01, y: 0}
 --- !u!1001 &651202784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3963,6 +3997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410088940}
   - component: {fileID: 1410088939}
+  - component: {fileID: 1410088941}
   m_Layer: 0
   m_Name: Fond_Lointain_0
   m_TagString: Untagged
@@ -4016,7 +4051,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -30
   m_Sprite: {fileID: 3529995776312967999, guid: d796413692c35634eadaf3f196e9c983, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4037,12 +4072,28 @@ Transform:
   m_GameObject: {fileID: 1410088938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 4.25, z: 0}
-  m_LocalScale: {x: 0.93631554, y: 1.0705775, z: 1}
+  m_LocalPosition: {x: 0.3223, y: 0.2177, z: 0}
+  m_LocalScale: {x: 1.2012504, y: 1.3927087, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410088941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410088938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a583d581d8821ab49a3bbf4db5e23f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 519420032}
+  suiviHorizontal: 0.92
+  suiviVertical: 0.95
+  vitesseAutomatique: {x: 0.005, y: 0}
 --- !u!1 &1456045190
 GameObject:
   m_ObjectHideFlags: 0
@@ -4544,6 +4595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640046351}
   - component: {fileID: 1640046350}
+  - component: {fileID: 1640046352}
   m_Layer: 0
   m_Name: Fond_PremierPlan_1
   m_TagString: Untagged
@@ -4597,7 +4649,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -5
   m_Sprite: {fileID: -5217994350419474214, guid: 34c1382f14cfa4c4e9a7eca524fb84b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4624,6 +4676,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640046352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640046349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a583d581d8821ab49a3bbf4db5e23f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetParallaxe
+  cameraCible: {fileID: 519420032}
+  suiviHorizontal: 0.4
+  suiviVertical: 0.6
+  vitesseAutomatique: {x: 0, y: 0}
 --- !u!1 &1920028305
 GameObject:
   m_ObjectHideFlags: 0
