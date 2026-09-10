@@ -4093,7 +4093,7 @@ MonoBehaviour:
   cameraCible: {fileID: 519420032}
   suiviHorizontal: 0.92
   suiviVertical: 0.95
-  vitesseAutomatique: {x: 0.005, y: 0}
+  vitesseAutomatique: {x: 0.006, y: 0}
 --- !u!1 &1456045190
 GameObject:
   m_ObjectHideFlags: 0
