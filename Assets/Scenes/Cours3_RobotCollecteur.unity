@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 9170390}
   - component: {fileID: 9170392}
   - component: {fileID: 9170391}
+  - component: {fileID: 9170393}
   m_Layer: 0
   m_Name: Ennemis_1
   m_TagString: Untagged
@@ -277,6 +278,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9170393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46963e317e9a549ab91a56a7af74d065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnnemiMobile
+  typeDeplacement: 0
+  pointA: {fileID: 1114747703}
+  pointB: {fileID: 825058251}
+  vitessePatrouille: 1.8
+  hauteurVague: 1.1
+  frequenceVague: 1.4
+  joueur: {fileID: 2117951774}
+  rayonDetection: 3.5
+  vitessePoursuite: 2.8
+  pointDepartJoueur: {fileID: 19371696}
+  delaiEntreDegats: 1.2
 --- !u!1 &18764240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11198,6 +11222,7 @@ GameObject:
   - component: {fileID: 893673989}
   - component: {fileID: 893673991}
   - component: {fileID: 893673990}
+  - component: {fileID: 893673992}
   m_Layer: 0
   m_Name: Ennemis_2
   m_TagString: Untagged
@@ -11344,6 +11369,29 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0000009536743, y: 0.0000009536743}
   m_Size: {x: 13.029999, y: 12.069999}
   m_Direction: 0
+--- !u!114 &893673992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893673987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46963e317e9a549ab91a56a7af74d065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnnemiMobile
+  typeDeplacement: 1
+  pointA: {fileID: 273441185}
+  pointB: {fileID: 1755466206}
+  vitessePatrouille: 1.8
+  hauteurVague: 1.1
+  frequenceVague: 1.4
+  joueur: {fileID: 2117951774}
+  rayonDetection: 3.5
+  vitessePoursuite: 2.8
+  pointDepartJoueur: {fileID: 19371696}
+  delaiEntreDegats: 1.2
 --- !u!1 &893968656
 GameObject:
   m_ObjectHideFlags: 0
