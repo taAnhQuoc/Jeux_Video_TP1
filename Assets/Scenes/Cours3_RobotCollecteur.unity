@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 9170392}
   - component: {fileID: 9170391}
   - component: {fileID: 9170393}
+  - component: {fileID: 9170394}
   m_Layer: 0
   m_Name: Ennemis_1
   m_TagString: Untagged
@@ -277,7 +278,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &9170393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,8 +300,23 @@ MonoBehaviour:
   joueur: {fileID: 2117951774}
   rayonDetection: 3.5
   vitessePoursuite: 2.8
-  pointDepartJoueur: {fileID: 19371696}
+  pointDepartJoueur: {fileID: 1114747703}
   delaiEntreDegats: 1.2
+--- !u!114 &9170394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171fbfbe05b084d6fb29b485089c6bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetAttaqueEnnemi
+  couleurAttaque: {r: 1, g: 0.45, b: 0.12, a: 1}
+  agrandissement: 1.22
+  duree: 0.18
 --- !u!1 &18764240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11223,6 +11239,7 @@ GameObject:
   - component: {fileID: 893673991}
   - component: {fileID: 893673990}
   - component: {fileID: 893673992}
+  - component: {fileID: 893673993}
   m_Layer: 0
   m_Name: Ennemis_2
   m_TagString: Untagged
@@ -11331,7 +11348,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &893673991
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11390,8 +11407,23 @@ MonoBehaviour:
   joueur: {fileID: 2117951774}
   rayonDetection: 3.5
   vitessePoursuite: 2.8
-  pointDepartJoueur: {fileID: 19371696}
+  pointDepartJoueur: {fileID: 273441185}
   delaiEntreDegats: 1.2
+--- !u!114 &893673993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893673987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171fbfbe05b084d6fb29b485089c6bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetAttaqueEnnemi
+  couleurAttaque: {r: 1, g: 0.45, b: 0.12, a: 1}
+  agrandissement: 1.22
+  duree: 0.18
 --- !u!1 &893968656
 GameObject:
   m_ObjectHideFlags: 0
@@ -26726,6 +26758,7 @@ GameObject:
   - component: {fileID: 2117951771}
   - component: {fileID: 2117951770}
   - component: {fileID: 2117951769}
+  - component: {fileID: 2117951775}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Player
@@ -26916,6 +26949,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117951775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117951768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171fbfbe05b084d6fb29b485089c6bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EffetAttaqueEnnemi
+  couleurAttaque: {r: 0.6981132, g: 0.4574853, b: 0.23380208, a: 1}
+  agrandissement: 1.22
+  duree: 0.45
 --- !u!1 &2118967662
 GameObject:
   m_ObjectHideFlags: 0
